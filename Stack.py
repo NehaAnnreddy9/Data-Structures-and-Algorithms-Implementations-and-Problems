@@ -1,3 +1,4 @@
+#Stack Data Structure Implemented using Deque
 import collections
 
 class Stack:
