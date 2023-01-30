@@ -10,7 +10,8 @@ class DoublyLinkedList:
         self.size = 0
         self.head = Node(None, None, None)
         self.tail = Node(None, None, None)
-   
+
+#Function to display the linked list
     def __str__(self):
         if self.size == 0:
             print("Empty list")
