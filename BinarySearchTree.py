@@ -80,7 +80,7 @@ class BinarySearchTree:
             
     def height_recursive(self,temp):
         if(temp == None): return 0
-        return Max(self.height_recursive(temp.left),self.height_recursive(temp.right)) + 1
+        return max(self.height_recursive(temp.left),self.height_recursive(temp.right)) + 1
         
     def height(self):
         height = self.height_recursive(self.root)
