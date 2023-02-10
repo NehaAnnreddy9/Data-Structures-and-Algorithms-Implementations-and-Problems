@@ -107,3 +107,4 @@ class BinarySearchTree:
                 Queue.append(elem.right)
             print_list.append(elem.data)
         print(print_list)
+        
