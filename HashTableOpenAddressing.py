@@ -81,8 +81,6 @@ class HashTableOpenAddressing:
             if (self.size > self.threshold):
                 self.resize_table()
             
-                
-    
     def lookup(self, key):
         if(key == None): 
             print("Key cannot be null")
