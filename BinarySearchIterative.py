@@ -1,3 +1,4 @@
+#Binary Search using Iterative method-
 def BinarySearchIter(arr,low,high,val):
     if len(arr) == 0: return -1
     while(low <= high):
