@@ -33,8 +33,7 @@ class DoublyLinkedList:
             trav = next
         self.head = self.tail = trav = None
         self.size = 0
-            
-            
+                   
     def length(self):
         return self.size
     
@@ -64,8 +63,7 @@ class DoublyLinkedList:
             self.tail.next = new_node
             self.tail = new_node
         self.size = self.size + 1
-        
-        
+            
     def add_at_index(self, data, index):
 
         if (index == 0):
@@ -98,7 +96,6 @@ class DoublyLinkedList:
             trav.data = None
             self.size-= 1
     
-    
     def remove_at_last(self):
         if(self.length() == 0):
             print("Empty linked list")
@@ -109,7 +106,6 @@ class DoublyLinkedList:
             trav.prev = trav.next = None
             trav.data = None
             self.size-= 1
-    
     
     def remove_at_index(self, index):
         if (index == 0):
