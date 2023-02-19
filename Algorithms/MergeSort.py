@@ -5,8 +5,8 @@ def merge(arr,l,m,r):
     else: arr2 = arr[m+1:r+1]
     i = j = 0
     k = l
-    size1 = len(arr1)
-    size2 = len(arr2)
+    size1 = m-l + 1
+    size2 = r - m+2
     while i < size1 and j < size2:
         if arr1[i] <= arr2[j]:
             arr[k] = arr1[i]
@@ -15,16 +15,14 @@ def merge(arr,l,m,r):
             arr[k] = arr2[j]
             j+=1
         k+=1
-    if(i < size1):
-        while(i < size1):
-            arr[k] = arr1[i]
-            i+=1
-            k+=1
-    elif(j < size2):
-        while(j <  size2):
-            arr[k] = arr2[j]
-            j+=1
-            k+=1
+    while(i < size1):
+        arr[k] = arr1[i]
+        i+=1
+        k+=1
+    while(j <  size2):
+        arr[k] = arr2[j]
+        j+=1
+        k+=1
 
 def Merge_sort(arr,l,r):
     if r>l:
