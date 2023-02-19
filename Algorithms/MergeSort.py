@@ -5,8 +5,8 @@ def merge(arr,l,m,r):
     else: arr2 = arr[m+1:r+1]
     i = j = 0
     k = l
-    size1 = m-l + 1
-    size2 = r - m+2
+    size1 = (m-l)+1
+    size2 = r-m
     while i < size1 and j < size2:
         if arr1[i] <= arr2[j]:
             arr[k] = arr1[i]
