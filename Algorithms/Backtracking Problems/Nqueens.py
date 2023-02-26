@@ -3,7 +3,7 @@ def N_queens_rec(strn,n):
     if len(strn) == n:
         flg = 0
         for i in range(n-1):
-            if strn[i] + 1 == strn[i+1] or strn[i] - 1 == strn[i+1]:
+            if strn[i] + 1 == strn[i+1] or strn[i] - 1 == strn[i+1]: #Need to consider more conditions - Incomplete solution
                 flg = 1
                 break
         if flg == 0: 
@@ -16,7 +16,6 @@ def N_queens_rec(strn,n):
             strn.pop()
 
 #N-queens backtracking solution-
-
 def isSafe(row,col,sol,n):
     for i in range(row):
         if sol[i][col] == "Q":
@@ -53,13 +52,3 @@ def N_queens_rec(row,sol,n):
             sol[row][i] = "."
     return False
  
-            
-        
-        
-        
-    
-    
-    
-    
-    
-    
